@@ -31,7 +31,6 @@ class LabelService{
         }
         //其他属性
         $where['show'] = 1;
-        var_dump($where);die;
         $model = target('duxcms/Category');
         return $model->loadData($where,$data['limit']);
 	}
