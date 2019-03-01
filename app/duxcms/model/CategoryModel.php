@@ -45,6 +45,7 @@ class CategoryModel extends BaseModel {
      * @return array 列表
      */
     public function loadData($where = array(), $limit = 0){
+        var_dump($where);die;
         $pageList = $this->where($where)->limit($limit)->order("sequence ASC , class_id ASC")->select();
         $list = array();
         if(!empty($pageList)){
