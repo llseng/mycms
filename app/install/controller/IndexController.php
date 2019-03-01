@@ -75,7 +75,7 @@ class IndexController extends Controller {
         //检查数据库
         $link = @mysql_connect($data['DB_HOST'] . ':' . $data['DB_PORT'], $data['DB_USER'], $data['DB_PWD']);
         if(!$link) {
-            show_msg('数据库连接失败，请检查连接信息是否正确！',false);
+            show_msg('数据库连接失败，请检查连接信息是否正确！' . mysql_error($link) ,false);
         }
         $mysqlInfo = mysql_get_server_info($link);
         if($mysqlInfo < '5.1.0') {
