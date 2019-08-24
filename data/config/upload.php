@@ -2,7 +2,7 @@
 return array(
     /* 上传设置 */
     'UPLOAD_SIZE'=>10,
-    'UPLOAD_EXTS'=>'jpg,gif,bmp,png',
+    'UPLOAD_EXTS'=>'jpg,gif,bmp,png,mp4',
     'THUMB_STATUS'=>0,
     'THUMB_TYPE'=>1,
     'THUMB_WIDTH'=>800,
